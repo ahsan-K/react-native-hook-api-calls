@@ -1,6 +1,6 @@
 import { useEffect, useState, useCallback, useMemo } from 'react';
 import { ActivityIndicator, StyleSheet } from 'react-native';
-import axios from 'axios';
+import axios, { AxiosInstance } from 'axios';
 
 //// you can create your custom axios instance in separate file and use it here. It is just for demonstration 
 
@@ -15,7 +15,7 @@ function useApi<T = any>(
     endpoint: string,
     method: HttpMethod = 'get',
     options: UseApiOptions = {},
-    axiosInstance: typeof axios
+    axiosInstance: AxiosInstance
 ) {
     const [data, setData] = useState<T | null>(null);
     const [loading, setLoading] = useState(!options.manual);

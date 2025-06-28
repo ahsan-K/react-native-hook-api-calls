@@ -1,36 +1,21 @@
+# react-native-hook-api-call
 
-## A simple hook for api calls. We are using axios in it.
+A simple and reusable React Native hook for making API calls using axios.
 
+---
 
+## Features
 
+- Customizable HTTP method (`GET`, `POST`, `PUT`, `DELETE`)
+- Supports manual or automatic fetching
+- Handles loading, error, and data state
+- Optional custom axios instance support (e.g., for authentication tokens or baseURL)
 
+---
 
-### use it like this
+## Installation
 
-// interface Todo {
-//   id: number;
-//   title: string;
-//   completed: boolean;
-// }
-
-
-// const MyComponent = () => {
-//     const { data, error, LoaderComponent } = useApi<Todo[]>(
-//         '/posts',
-//         'get'
-//     );
-
-//     useEffect(() => {
-//         RNBootSplash.hide();
-//     }, [])
-
-//     console.log(error)
-//     return (
-//         <View>
-//             {LoaderComponent}
-//     
-//         </View>
-//     );
-// };
-
-// export default MyComponent;
+```bash
+npm install react-native-hook-api-call
+# or
+yarn add react-native-hook-api-call
