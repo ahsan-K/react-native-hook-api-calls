@@ -1,0 +1,41 @@
+{
+    "name": "react-native-hook-api-call",
+    "version": "1.0.0",
+    "description": "Custom React Native hook for API calls using axios",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "keywords": [
+        "react-native",
+        "hook",
+        "api-call",
+        "axios",
+        "useApi"
+    ],
+    "author": "Ahsan Ali",
+    "license": "MIT",
+    "scripts": {
+        "build": "tsc",
+        "prepare": "npm run build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ahsan-K/react-native-hook-api-calls.git"
+    },
+    "bugs": {
+        "url": "https://github.com/ahsan-K/react-native-hook-api-calls/issues"
+    },
+    "homepage": "https://github.com/ahsan-K/react-native-hook-api-calls#readme",
+    "files": [
+        "dist"
+    ],
+    "dependencies": {
+        "axios": "^1.10.0",
+        "react": "18.2.0",
+        "react-native": "0.71.8"
+    },
+    "devDependencies": {
+        "typescript": "^5.4.0",
+        "@types/react": "^18.0.37",
+        "@types/react-native": "^0.71.8"
+    }
+}
