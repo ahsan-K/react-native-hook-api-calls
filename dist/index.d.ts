@@ -1,10 +1,10 @@
-import axios from 'axios';
+import { AxiosInstance } from 'axios';
 type HttpMethod = 'get' | 'post' | 'put' | 'delete';
 interface UseApiOptions {
     manual?: boolean;
     params?: Record<string, any>;
 }
-declare function useApi<T = any>(endpoint: string, method: HttpMethod | undefined, options: UseApiOptions | undefined, axiosInstance: typeof axios): {
+declare function useApi<T = any>(endpoint: string, method: HttpMethod | undefined, options: UseApiOptions | undefined, axiosInstance: AxiosInstance): {
     data: T | null;
     loading: boolean;
     error: string | null;
